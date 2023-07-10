@@ -62,11 +62,16 @@ aside .sidebar a:last-child {
     width: 100%;
 }
 
-aside .sidebar a.active {
+aside .sidebar a:hover {
     width: 100%;
     color: var(--color-primary);
     background-color: var(--color-light);
     margin-left: 0;
+}
+
+aside .sidebar a:first-child:hover {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 aside .sidebar a.active::before {
@@ -78,7 +83,6 @@ aside .sidebar a.active::before {
 
 aside .sidebar a.active span {
     color: var(--color-primary);
-    margin-left: calc(1rem - 3px);
 }
 
 aside .sidebar a:hover {
